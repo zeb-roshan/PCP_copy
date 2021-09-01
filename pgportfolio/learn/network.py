@@ -9,7 +9,7 @@ import tflearn
 
 class NeuralNetWork:
     def __init__(self, feature_number, rows, columns, layers, device):
-        tf_config = tf.compat.v1.ConfigProto()
+        tf_config = tf.ConfigProto()
         self.session = tf.Session(config=tf_config)
         if device == "cpu":
             tf_config.gpu_options.per_process_gpu_memory_fraction = 0
