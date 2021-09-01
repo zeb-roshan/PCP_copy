@@ -59,7 +59,8 @@ class TraderTrainer:
             self.training_set = self._matrix.get_training_set()
         self.upperbound_validation = 1
         self.upperbound_test = 1
-        tf.set_random_seed(self.config["random_seed"])
+        tf.random.set_seed(self.config["random_seed"])
+        #tf.set_random_seed(self.config["random_seed"])
         self.device = device
         if agent:
             self._agent = agent
