@@ -12,7 +12,7 @@ from pgportfolio.tools.trade import save_test_data
 from pgportfolio.tools.shortcut import execute_backtest
 from pgportfolio.resultprocess import plot
 
-
+#starter
 def build_parser():
     parser = ArgumentParser()
     parser.add_argument("--mode",dest="mode",
