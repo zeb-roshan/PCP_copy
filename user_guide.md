@@ -1,4 +1,14 @@
 # User Guide
+
+##Easy Steps to Start Training:
+`python main.py --mode=download_data`      
+`python main.py --mode=generate --repeat=1`
+`python main.py --mode=train --processes=1`
+
+
+Python version 3.5 use for testing
+
+
 ## Configuration File
 Under the `nntrader/nntrader` directory, there is a json file called `net_config.json`,
  holding all the configuration of the agent and could be modified outside the program code.
@@ -64,7 +74,7 @@ Under the `nntrader/nntrader` directory, there is a json file called `net_config
     * Each training process is made up from 2 stages:
       * Pre-training, log example:
       
-      
+
 ```
 INFO:root:average time for data accessing is 0.00070324587822
 INFO:root:average time for training is 0.0032548391819
